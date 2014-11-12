@@ -15,49 +15,6 @@ p {
   margin: 0 0 3em 0;
   position: relative;
 }
-
-nav ul {
-  list-style: none;
-  background-color:#0C48E1;
-}
-
-nav ul li {
-  display: inline-block;
-  padding: 15px;
-  color:#660066;
-  font-size:25px;
-  font-style:bold;
-  font-family: Aria;
-}
-
-#sign_up{
-  margin-left: 500px;
-}
-
-
-nav ul li a {
-  margin-right:10px;
-  margin-left: 10px;
-  text-decoration: none;
-  color:white;
-  font-size:25px;
-  font-family: Arial white bold;
-  font-style:bold;
-}
-
-nav ul li a:hover{
-  font-size: 25px;
-  border-radius:5px;
-  background-color:#0ABBDA;
-  padding:1px;
-  font-family: Arial white bold;
-}
-
-
-nav ul li a.selected {
-	color: #32673f;
-}
-
 label {
   display: block;
   font-size: 1.6em;
@@ -126,8 +83,8 @@ input[type="submit"] {
 
 }
 
-#reg_logo {
-	margin: 0 auto;
-	width:360px;
-	
+h1{
+	text-align:center;
+	font-size:35px;
+	margin-top:-50px;
 }

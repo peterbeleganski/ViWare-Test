@@ -4,6 +4,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 public class Account {
 
@@ -33,6 +34,41 @@ public class Account {
 			return true;
 		}
 
+	}
+	public void postData(String sender,String data) throws SQLException{
+		String sql="insert into message (Sender,Data) values (?, ?)";
+		PreparedStatement stmt = conn.prepareStatement(sql);
+		stmt.setString(1, sender);
+		stmt.setString(2, data);
+		stmt.executeUpdate();
+		stmt.close();
+		
+		
+	}
+	public String Sender(String fromUser) throws SQLException{
+		PreparedStatement stmt = null;
+		String sql="SELECT Sender FROM `message`";
+		 stmt = conn.prepareStatement(sql);
+
+		ResultSet rs = stmt.executeQuery(sql);
+		while(rs.next()){
+			fromUser = rs.getString("Sender");
+	
+		}
+		return fromUser;
+	
+	}
+	public String postedData(String data) throws SQLException{
+		String sql="select Data from message";
+		PreparedStatement stmt = conn.prepareStatement(sql);
+
+		ResultSet rs = stmt.executeQuery();
+		while(rs.next()){
+			data = rs.getString("Data");
+	
+		}
+		
+		return data;
 	}
 	public void create(String email, String password) throws SQLException {
 		String sql = "insert into users (email, password) values (?, ?)";

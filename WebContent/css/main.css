@@ -3,7 +3,79 @@ body {
   font-family: 'Nunito', sans-serif;
   color: #384047;
   background-color: #e4e4e4;
+  margin-top:0px;
 
+}
+
+h1{
+	font-size:32px;
+}
+h2{
+	font-size:28px;
+}
+
+#nov{
+	color:red;
+	text-decoration:underline;
+}
+
+#forum{
+	text-align:center;
+}
+
+#text_news{
+	margin:0 auto;
+	margin-top:30px;
+	padding:10px;
+	width:360px;
+	height:100%;
+	font-size:20px;
+	font-family:cursive;
+}
+
+#posts{
+	margin-left:500px;
+	
+}
+
+#form{
+	float:left;
+}
+
+#treiner {
+	width:360px;
+	height:300px;
+	font-size:20px;
+	font-family:cursive;
+	margin-top:-180px;
+	
+	
+}
+
+span{
+	color:red;
+	
+}
+
+#desc_js{
+	
+}
+
+#slides_js{
+	float:right;
+}
+
+#slides_jsp{
+	float:right;
+}
+
+#slides{
+	float:right;
+}
+
+#error_mes{
+color:red;
+font-size:25px;	
 }
 
 nav ul {
@@ -14,16 +86,77 @@ nav ul {
 nav ul li {
   display: inline-block;
   padding: 15px;
-  color:#660066;
   font-size:25px;
-  font-style:bold;
-  font-family: Aria;
+  color:white;
 }
 
 #sign_up{
   margin-left: 500px;
 }
 
+table tr td  {
+	background-color:#E7F691;
+}
+
+
+#start {
+	color:#0C48E1;
+	text-align:center;
+	font-size:30px;
+	
+}
+
+#start:hover{
+	font-size: 30px;
+	text-decoration:underline;
+}
+
+#java_video_text{
+	
+	float:left;
+}
+
+iframe {
+	float:left;
+}
+
+#java_pic{
+	float:right;
+}
+
+#wrapper-settings{
+float:right;	
+}
+#wrapper-settings ul {
+	color:black;	
+  background-color:#0C48E1;
+}
+
+#wrapper-settings ul li a {
+	
+	  margin-right:10px;
+  margin-left: 10px;
+  text-decoration: none;
+  color:white;
+  font-size:20px;
+  font-family: Arial white bold;
+  font-style:bold;
+}
+#wrapper-settings ul li a:hover{
+	font-size: 20px;
+  border-radius:5px;
+  background-color:#0ABBDA;
+  padding:1px;
+  text-decoration:underline;
+  font-family: Arial white bold;	
+}
+
+#wrapper-settings ul li {
+
+  padding: 5px;
+  font-size:25px;
+  color:white;
+}
 
 nav ul li a {
   margin-right:10px;
@@ -35,15 +168,22 @@ nav ul li a {
   font-style:bold;
 }
 
-nav ul li a:hover{
+
+nav a, nav a:visited {
+  color:white;
+  text-decoration:underline;
+}
+
+/* selected nav link */
+nav a.selected, nav a:hover {
+  color:white;
   font-size: 25px;
   border-radius:5px;
   background-color:#0ABBDA;
   padding:1px;
   font-family: Arial white bold;
+  text-decoration:underline;
 }
-
-
 
 #login_form {
   margin-top: 50px;
@@ -54,17 +194,6 @@ nav ul li a:hover{
   border:1px solid #047CD2;
 
 
-}
-
-#registration_form{
-	form {
-  background: #fff;
-  padding: 4em 4em 2em;
-  max-width: 400px;
-  margin: 100px auto 0;
-  box-shadow: 0 0 1em #222;
-  border-radius: 5px;
-}
 }
 
 #slideshow{
@@ -98,6 +227,10 @@ display: block;
 
 }
 
+#video_java{
+	margin-left:50px;
+}
+
 #username, #password {
   height: 24px;
   width: 250px;
@@ -105,43 +238,13 @@ display: block;
   
 }
 
-.images {
-	margin:0 auto;	
-}
-
-#image_table {
-	padding:10px;
-	border:5px solid #00CC66;
-	margin:0 auto;
-	background-color:#B2FFFF; 
-}
-
-#click_toplay{
-	
-	font-size:25px;
-	font-family:Arial BOLD;
-	color:#0066FF;
-}
-
-#image_table a {
-	text-decoration:none;
-	
-}
-#image_table a:hover {
-	text-decoration:underline;
-	
-}
-
-#user_profil{
-	margin-left:800px;
-}
-
 #wrapper{
-  width: 1050px;
+  width: 1200px;
   margin:0 auto;
   background-color:white; 
   padding: 10px;
   border-radius: 5px;
+  height:100%;
 }
 
 .search{
@@ -192,12 +295,11 @@ display: block;
 #video_plat{
   padding: 10px;
   margin: 0 auto;
+  clear:both;
 }
 
-#video_plat video {
-  padding: 10px;
-  margin-left: 90px;
-  margin-right: 50px;
+#web_sites{
+	
 }
 
 #video_plat h2 {
@@ -215,11 +317,15 @@ display: block;
 
 }
 
+a{
+	text-decoration:none;
+}
+
 footer{
   margin-top:10px;
 padding:10px;
 background: #0C48E1;
-width: 1050px;
+width: 1200px;
 margin: 0 auto;
 }
 

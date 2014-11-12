@@ -1,12 +1,51 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/sql" prefix="sql"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
 <%@ taglib tagdir="/WEB-INF/tags" prefix="ps" %>
 
-<c:import url="header.jsp">
-	<c:param name="title" value="Picture Squirrel - View Image"></c:param>
-</c:import>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=TF-8">
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/style/style.css" />
+<title>${param.title}</title>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body>
+
+
+
+<header>
+	
+		<nav id="nav">
+			<ul>
+				<li><a href="/ViWare-Test/Controller?action=back" class="selected">Начало</a></li>
+				<li><a href="/ViWare-Test/Controller?action=news">Новини</a></li>
+				<li><a href="about.html">За нас</a></li>
+
+				<li><a href="/ViWare-Test/Controller?action=back">Назад</a></li>
+				
+			</ul>
+				
+				
+
+			
+		</nav>
+</header>
+
+
+<div class="headerWrapper">
+	<div class="header">
+		<img src="${pageContext.request.contextPath}/images/logo.png" />
+		<span id="title" ></span>
+	</div>
+</div>
+
+<div class="content">
 
 <center>
 
@@ -53,16 +92,16 @@
 		<c:out
 			value="${fn:toUpperCase(fn:substring(image.stem, 0, 1))}${fn:toLowerCase(fn:substring(image.stem, 1, -1))}" />
 	</H2>
-	<span class="rating">Rated: <fmt:formatNumber value="${average_ranking}" maxFractionDigits="1"/></span>
+	<span class="rating">Оценено: <fmt:formatNumber value="${average_ranking}" maxFractionDigits="1"/></span>
 
 	<%-- Output the image and the rating form --%>
 	<table style="border: none;">
 		<tr>
 			<td><br style="margin-bottom: 1px;"> <span
-				class="attribution">Image by <a class="attribution"
+				class="attribution">Видеото е от: <a class="attribution"
 					target="_blank" href="${image.attribution_url}">${image.attribution_name}</a></span><br>
 
-	<ps:image width="200" stem="${image.stem}" extension="${image.image_extension}"/>
+	<ps:image width="400"  stem="${image.stem}" extension="${image.image_extension}"/>
 				</td>
 			<td>
 				<form action='<c:url value="/gallery" />' method="post">
@@ -72,28 +111,24 @@
 					<table style="padding: 20px; border: none;">
 						<tr>
 							<td><h3>
-									<i>Rate It!</i>
+									<i>Гласувай!</i>
 								</h3></td>
 						</tr>
 						<tr>
-							<td align="left"><input type="radio" name="rating" value="5">5
-								- Amazing</input></td>
+							<td align="left"><input type="radio" name="rating" value="5">4
+								- Чудесно</input></td>
 						</tr>
 						<tr>
-							<td align="left"><input type="radio" name="rating" value="4">4
-								- Good</input></td>
+							<td align="left"><input type="radio" name="rating" value="4">3
+								- Добро</input></td>
 						</tr>
 						<tr>
 							<td align="left"><input type="radio" name="rating" value="3"
-								checked="checked">3 - Average</input></td>
+								checked="checked">2 - Средно</input></td>
 						</tr>
 						<tr>
-							<td align="left"><input type="radio" name="rating" value="2">2
-								- Bad</input></td>
-						</tr>
-						<tr>
-							<td align="left"><input type="radio" name="rating" value="1">1
-								- Horrendous</input></td>
+							<td align="left"><input type="radio" name="rating" value="2">1
+								- Лошо</input></td>
 						</tr>
 						<tr>
 							<td align="left"><input type="submit" name="submit"
@@ -106,5 +141,25 @@
 	</table>
 </center>
 
-<c:import url="footer.jsp"></c:import>
 
+</div>
+
+
+
+<footer>
+			
+		<a href="http://twitter.com"><img src="img/twitter-icon.png" alt="Twitter Logo" class="social-icon"></a>
+		
+        <a href="http://facebook.com"><img src="img/facebook.png" alt="Facebook Logo" class="social-icon"></a>
+         <a href="http://facebook.com"><img src="img/youtube.png" alt="Facebook Logo" class="social-icon"></a>
+       
+        	<ul>
+        		<li><a href="contact.html">Контакти</a></li>
+        		<li><a href="about.html">За нас</a></li>
+        		<li><a href="help.html">Помощ</a></li>
+        		<li><a href="help.html">Форум</a></li>
+        	</ul>
+        <p>&copy; 2014 ViWare.</p>
+		</footer>
+</body>
+</html>
