@@ -1,0 +1,276 @@
+@CHARSET "ISO-8859-1";
+body {
+  font-family: 'Nunito', sans-serif;
+  color: #384047;
+  background-color: #e4e4e4;
+
+}
+
+nav ul {
+  list-style: none;
+  background-color:#0C48E1;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 15px;
+  color:#660066;
+  font-size:25px;
+  font-style:bold;
+  font-family: Aria;
+}
+
+#sign_up{
+  margin-left: 500px;
+}
+
+
+nav ul li a {
+  margin-right:10px;
+  margin-left: 10px;
+  text-decoration: none;
+  color:white;
+  font-size:25px;
+  font-family: Arial white bold;
+  font-style:bold;
+}
+
+nav ul li a:hover{
+  font-size: 25px;
+  border-radius:5px;
+  background-color:#0ABBDA;
+  padding:1px;
+  font-family: Arial white bold;
+}
+
+
+
+#login_form {
+  margin-top: 50px;
+  width:400px;
+  background-color: #b7e6fc;
+  font-size:20px;
+  padding: 10px;
+  border:1px solid #047CD2;
+
+
+}
+
+#registration_form{
+	form {
+  background: #fff;
+  padding: 4em 4em 2em;
+  max-width: 400px;
+  margin: 100px auto 0;
+  box-shadow: 0 0 1em #222;
+  border-radius: 5px;
+}
+}
+
+#slideshow{
+  margin-left:500px;
+  margin-top: -300px;  
+}
+
+#slideshow img {
+  border-radius:5px;
+  border-color:#0C48E1; 
+}
+
+#login_form, .auth {
+  margin-left: 10px;
+}
+ 
+h2{
+  text-align: center;
+  margin-right: 40px;
+  
+}
+
+.auth{
+display: block;
+
+}
+
+.inputs{
+  margin-left: 35px;
+  padding:10px;
+
+}
+
+#username, #password {
+  height: 24px;
+  width: 250px;
+  font-size:20px; 
+  
+}
+
+.images {
+	margin:0 auto;	
+}
+
+#image_table {
+	padding:10px;
+	border:5px solid #00CC66;
+	margin:0 auto;
+	background-color:#B2FFFF; 
+}
+
+#click_toplay{
+	
+	font-size:25px;
+	font-family:Arial BOLD;
+	color:#0066FF;
+}
+
+#image_table a {
+	text-decoration:none;
+	
+}
+#image_table a:hover {
+	text-decoration:underline;
+	
+}
+
+#user_profil{
+	margin-left:800px;
+}
+
+#wrapper{
+  width: 1050px;
+  margin:0 auto;
+  background-color:white; 
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.search{
+  margin-left: 500px;
+  margin-top: -50px;
+
+}
+
+#searchbox{
+  height: 25px;
+  width: 280px;
+  margin-top: -1px;
+}
+
+#search_label {
+ 
+  background-color: #050001;
+  padding: 5px;
+  height: 25px;
+  width: 250px;
+  color:white;
+  border: 1px solid white;
+}
+
+#submit_login{
+  font-size:20px;
+  background-color:#0C48E1;
+  border:1;  
+  padding: 10px;
+  margin-top: 10px;
+  width: 120px;
+  font-weight: bold;
+  color:white;
+}
+#register_link {
+  text-decoration: none;
+  background-color:#FC2B43;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 120px;
+  font-weight: bold;
+  padding: 10px;
+  color:white;
+  font-size:20px;
+  border:1;
+}
+
+#video_plat{
+  padding: 10px;
+  margin: 0 auto;
+}
+
+#video_plat video {
+  padding: 10px;
+  margin-left: 90px;
+  margin-right: 50px;
+}
+
+#video_plat h2 {
+  margin-top:50px;
+  color:black;
+  border-radius: 5px;
+  background-color:#D9DCFA;
+  text-align: left;
+  font-style: italic;
+  font-family:cursive;
+}
+
+#sign_up_link{
+  color:#0AFB02;
+
+}
+
+footer{
+  margin-top:10px;
+padding:10px;
+background: #0C48E1;
+width: 1050px;
+margin: 0 auto;
+}
+
+footer ul{
+  margin:0 auto;
+  margin-left: 350px;
+  list-style:white; 
+  background-color:#0C48E1;
+  display: inline-block;
+  
+}
+
+footer ul li {
+  padding: 10px;
+}
+
+
+footer ul li a {
+  color: white;
+  font-size: 22px;
+  font-family: Arial white;
+  font-style:cursive;
+  text-decoration: none;
+}
+
+footer ul li a:hover{
+  font-size: 22px;
+  border-radius:5px;
+  background-color:#0ABBDA;
+  padding:1px;
+  font-family: Arial white bold;
+}
+
+.social-icon{
+ margin:0 auto;
+}
+
+footer p {
+  color:white;
+  font-size:22px; 
+  margin: 0 auto;
+  padding: 10px;
+}
+
+
+/* Animations  */
+
+@media screen and (min-width: 480px) {
+
+  form {
+    max-width: 480px;
+  }
+
+}
