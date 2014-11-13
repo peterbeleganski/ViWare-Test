@@ -9,7 +9,7 @@
 <body>
 <p><a href="/ViWare-Test/Controller?action=home">Click Here to Login</a></p>
 <p><a href="/ViWare-Test/Controller?action=register">Click Here to Register</a></p>
-<p><a href="/ViWare-Test/Controller?action=doPost">Click Here to Register</a></p>
+<p><a href="/ViWare-Test/Controller?action=doPost">Click Here to go to Forum</a></p>
 
 </body>
 </html>
